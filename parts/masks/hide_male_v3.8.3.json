@@ -1,5 +1,5 @@
 {
- "bodyFile": "male_base_anime_v3.8.2.glb",
+ "bodyFile": "male_base_anime_v3.8.3.glb",
  "skinPrimitiveIndex": 0,
  "skinVertexCount": 9626,
  "triangleCount": 17740,
@@ -7808,15 +7808,15 @@
   }
  },
  "garmentFiles": {
-  "demo_shirt": "demo_shirt_male_v3.8.2.glb",
-  "bottom_shorts": "bottom_shorts_male_v3.8.2.glb",
-  "bottom_pants": "bottom_pants_male_v3.8.2.glb",
-  "shoes_sneakers": "shoes_sneakers_male_v3.8.2.glb"
+  "demo_shirt": "demo_shirt_male_v3.8.3.glb",
+  "bottom_shorts": "bottom_shorts_male_v3.8.3.glb",
+  "bottom_pants": "bottom_pants_male_v3.8.3.glb",
+  "shoes_sneakers": "shoes_sneakers_male_v3.8.3.glb"
  },
  "note": "triangle index = (offset in the primitive index buffer) / 3; underwear = same, for body primitive 1 (Underwear; the Skin primitive has a hole under it)",
  "validFor": [
-  "male_base_anime_v3.8.2.glb",
-  "male_base_anime_v3.8.2.mobile.glb"
+  "male_base_anime_v3.8.3.glb",
+  "male_base_anime_v3.8.3.mobile.glb"
  ],
  "note_v37": "v3.7 final (v3.7h body + Meshy ears prim 5 + face v2): Skin verts appended after the old ones, split face tris keep their index as child 0 (see body/staging_v3.7/male_base_anime_v3.7.trimap.json); no garment-hidden triangle was split, garment lists unchanged. Same counts for .dense/.glb/.mobile.",
  "note_g1": "v3.7.1: lists rebuilt with masks36.py on the v3.7.1 body and the shipped v3.7.1 garments (rest + default/Anime figure/Proportion sheet/weight_heavy=1/muscle_strong=1, 2 cm opening inset). Only original Skin triangles (< 14640) can be hidden; the appended face triangles and the Ears part (prim 5) are never in a list.",
@@ -7825,5 +7825,6 @@
  "note_v373": "v3.7.3: knee_bend_l/r keys re-made flip-free (rest geometry, topology, garment rest shapes unchanged). masks36.py re-run on the v3.7.3 male body + v3.7.3 garments: Skin lists identical to v3.7.2 per garment {'demo_shirt': True, 'bottom_shorts': True, 'bottom_pants': True, 'shoes_sneakers': True}; v3.7.2 lists (incl. hand-filled underwear tris) carried over. validFor/count check vs shipped files: [(True, True), (True, True)].",
  "note_v38": "v3.8: knee_bend_l/r re-sculpted for round volume (v3.7.3 key x0.4; female R locally relaxed). Rest geometry, topology and garment rest shapes unchanged, so the v3.7.3 lists carry over. validFor/count check: [(True, True), (True, True)]. Male forearm x1.19 (hand/finger joints + verts moved, topology unchanged); counts re-checked [(True, True), (True, True)].",
  "note_v382": "v3.8.2: crown dome (skull cap verts only, no Skin topology change) + bind pose lifted by 5.549 mm (soles at y=0); garment rest shapes moved by the same lift. Lists carry over; validFor/garmentFiles renamed.",
- "note_v382_s2": "v3.8.2 session 2: male shirt shoulders_narrow key (under-arm panel) and shorts/pants crotch re-cut (inner leg 5 mm to the skin; the crotch is the Underwear prim, Skin has a hole there, so no Skin list changes); lists carried over."
+ "note_v382_s2": "v3.8.2 session 2: male shirt shoulders_narrow key (under-arm panel) and shorts/pants crotch re-cut (inner leg 5 mm to the skin; the crotch is the Underwear prim, Skin has a hole there, so no Skin list changes); lists carried over.",
+ "note_v383": "v3.8.3 (session 2: foot fade 1-12 cm above the ankle): forearm / shin skin weights narrowed to the joints and the knee_bend shin deltas straightened (fix383.py, CF=0.01,0.12 COMP=0) on the body and the garments; rest geometry, topology and garment rest shapes unchanged, so the lists carry over; validFor / garmentFiles renamed."
 }

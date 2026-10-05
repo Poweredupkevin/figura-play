@@ -1,7 +1,7 @@
 {
- "bodyFile": "female_base_anime_v3.8.2.glb",
+ "bodyFile": "female_base_anime_v3.8.3.nonmap.glb",
  "skinPrimitiveIndex": 0,
- "skinVertexCount": 9615,
+ "skinVertexCount": 9522,
  "triangleCount": 17592,
  "inset_m": 0.02,
  "presetsIntersected": [
@@ -7433,20 +7433,20 @@
   }
  },
  "garmentFiles": {
-  "demo_shirt": "demo_shirt_female_v3.8.2.glb",
-  "bottom_shorts": "bottom_shorts_female_v3.8.2.glb",
-  "bottom_pants": "bottom_pants_female_v3.8.2.glb",
-  "shoes_sneakers": "shoes_sneakers_female_v3.8.2.glb"
+  "demo_shirt": "demo_shirt_female_v3.8.3.glb",
+  "bottom_shorts": "bottom_shorts_female_v3.8.3.glb",
+  "bottom_pants": "bottom_pants_female_v3.8.3.glb",
+  "shoes_sneakers": "shoes_sneakers_female_v3.8.3.glb"
  },
  "note": "triangle index = (offset in the primitive index buffer) / 3; underwear = same, for body primitive 1 (Underwear; the Skin primitive has a hole under it)",
  "insetZones": {
   "bottom_shorts": "0.8 cm instead of 2 cm where the body vertex is at y 0.68-0.80 m and z >= -0.06 (back/inner thigh at the leg hem)"
  },
  "validFor": [
-  "female_base_anime_v3.8.2.glb",
-  "female_base_anime_v3.8.2.mobile.glb"
+  "female_base_anime_v3.8.3.nonmap.glb",
+  "female_base_anime_v3.8.3.nonmap.mobile.glb"
  ],
- "note_v37": "v3.7 final (v3.7h body + Meshy ears prim 5 + face v2): Skin verts appended after the old ones, split face tris keep their index as child 0 (see body/staging_v3.7/female_base_anime_v3.7.trimap.json); no garment-hidden triangle was split, garment lists unchanged. Same counts for .dense/.glb/.mobile.",
+ "note_v37": "v3.7 final (v3.7h body + Meshy ears prim 5 + face v2): Skin verts appended after the old ones, split face tris keep their index as child 0 (see body/staging_v3.7/female_base_anime_v3.7.nonmap.trimap.json); no garment-hidden triangle was split, garment lists unchanged. Same counts for .dense/.glb/.mobile.",
  "note_g1": "v3.7.1: lists rebuilt with masks36.py on the v3.7.1 body and the shipped v3.7.1 garments (rest + default/Anime figure/Proportion sheet/weight_heavy=1/muscle_strong=1, 2 cm opening inset). Only original Skin triangles (< 14570) can be hidden; the appended face triangles and the Ears part (prim 5) are never in a list.",
  "note_v372": "v3.7.2: knee_bend_l/r corrective keys added (rest geometry, topology and garment rest shapes unchanged), so the v3.7.1 lists carry over unchanged. validFor fixed: it named the v3.6 bodies since v3.7 (the app only applies a mask whose validFor lists the loaded file, so v3.7/v3.7.1 masks were silently ignored when validFor was present); it now names this file and its .mobile.",
  "note_v372_s2": "v3.7.2 session 2: lists re-run with masks36.py against the v3.7.2 bodies and the session-2 garments (shirt armpit push, pants hem blend, knee keys): Skin lists identical to v3.7.1 for every garment, both sexes; female shirt underwear 718 raw vs 726 kept (the 8 extra M1 hand-filled tris stay). validFor/count check re-run against the shipped files: OK.",
@@ -7454,5 +7454,6 @@
  "note_v373_s2": "v3.7.3 session 2: female shirt got an extra local push at body vert 2548 (8 mm along the body normal, radius 35 mm); masks36.py re-run with it: Skin and underwear lists identical, lists unchanged.",
  "note_v38": "v3.8: knee_bend_l/r re-sculpted for round volume (v3.7.3 key x0.4; female R locally relaxed). Rest geometry, topology and garment rest shapes unchanged, so the v3.7.3 lists carry over. validFor/count check: [(True, True), (True, True)].",
  "note_v382": "v3.8.2: crown dome (skull cap verts only, no Skin topology change) + bind pose lifted by 6.339 mm (soles at y=0); garment rest shapes moved by the same lift. Lists carry over; validFor/garmentFiles renamed.",
- "note_v382_s2": "v3.8.2 session 2: female shirt side-hem tuck at the hips (<=10 mm, >=8 mm kept) and shorts hem (front +3, back -1.5 mm); lists carried over (garments only moved closer to the body inside their own coverage)."
+ "note_v382_s2": "v3.8.2 session 2: female shirt side-hem tuck at the hips (<=10 mm, >=8 mm kept) and shorts hem (front +3, back -1.5 mm); lists carried over (garments only moved closer to the body inside their own coverage).",
+ "note_v383": "v3.8.3 (session 2: foot fade 1-12 cm above the ankle): forearm / shin skin weights narrowed to the joints and the knee_bend shin deltas straightened (fix383.py, CF=0.01,0.12 COMP=0) on the body and the garments; rest geometry, topology and garment rest shapes unchanged, so the lists carry over; validFor / garmentFiles renamed."
 }
